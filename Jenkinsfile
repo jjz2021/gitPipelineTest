@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Cloning Git') {
       steps {
-        git([url: 'git@github.com:jjz2021/gitPipelineTest.git', branch: 'main', credentialsId: 'gitHubCrd'])
+        git([url: 'git@github.com:jjz2021/gitPipelineTest.git', branch: 'main', credentialsId: 'gitHub-SSH'])
       }
     }
     stage('Deploy image and Remove Unused  image') {
